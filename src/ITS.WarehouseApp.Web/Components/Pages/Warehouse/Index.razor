@@ -1,0 +1,40 @@
+@page "/warehouse"
+@inject WarehouseApiClient ApiClient
+
+<PageTitle>Magazzino</PageTitle>
+
+<h3>Elementi in Magazzino</h3>
+
+<a href="/warehouse/create" class="btn btn-primary">Crea un nuovo prodotto</a>
+
+@if (_items == null)
+{
+    <p><em>Caricamento...</em></p>
+}
+else if (!_items.Any())
+{
+    <p>Nessun elemento presente in magazzino.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Prodotto</th>
+                <th>Quantità</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in _items)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.QuantityInStock</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

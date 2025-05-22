@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.WarehouseApp.AppHost", "src\ITS.WarehouseApp.AppHost\ITS.WarehouseApp.AppHost.csproj", "{7C758E9A-B0A6-4EA3-B08C-75E772BB7104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.WarehouseApp.ServiceDefaults", "src\ITS.WarehouseApp.ServiceDefaults\ITS.WarehouseApp.ServiceDefaults.csproj", "{595BF131-0CF4-EC16-4C47-5927E1DFC72B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.WarehouseApp.ApiService", "src\ITS.WarehouseApp.ApiService\ITS.WarehouseApp.ApiService.csproj", "{F2B13E51-58E5-6968-F2C7-EBB983B35786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.WarehouseApp.Web", "src\ITS.WarehouseApp.Web\ITS.WarehouseApp.Web.csproj", "{30AA54BD-1CB0-FB39-F6C6-BBA5C45C9665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.WarehouseApp.Dtos", "src\ITS.WarehouseApp.Dtos\ITS.WarehouseApp.Dtos.csproj", "{16F8C0DB-1119-49F3-BA3F-55F059A7B256}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Database.sql = Database.sql
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C758E9A-B0A6-4EA3-B08C-75E772BB7104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C758E9A-B0A6-4EA3-B08C-75E772BB7104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C758E9A-B0A6-4EA3-B08C-75E772BB7104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C758E9A-B0A6-4EA3-B08C-75E772BB7104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595BF131-0CF4-EC16-4C47-5927E1DFC72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595BF131-0CF4-EC16-4C47-5927E1DFC72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595BF131-0CF4-EC16-4C47-5927E1DFC72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595BF131-0CF4-EC16-4C47-5927E1DFC72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B13E51-58E5-6968-F2C7-EBB983B35786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B13E51-58E5-6968-F2C7-EBB983B35786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B13E51-58E5-6968-F2C7-EBB983B35786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B13E51-58E5-6968-F2C7-EBB983B35786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AA54BD-1CB0-FB39-F6C6-BBA5C45C9665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AA54BD-1CB0-FB39-F6C6-BBA5C45C9665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AA54BD-1CB0-FB39-F6C6-BBA5C45C9665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AA54BD-1CB0-FB39-F6C6-BBA5C45C9665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F8C0DB-1119-49F3-BA3F-55F059A7B256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F8C0DB-1119-49F3-BA3F-55F059A7B256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F8C0DB-1119-49F3-BA3F-55F059A7B256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F8C0DB-1119-49F3-BA3F-55F059A7B256}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B43455D-5286-4A95-842D-0758B41B4F8A}
+	EndGlobalSection
+EndGlobal

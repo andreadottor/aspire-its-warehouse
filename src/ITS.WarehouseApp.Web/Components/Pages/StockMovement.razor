@@ -1,0 +1,45 @@
+@page "/stock-movement"
+@inject WarehouseApiClient ApiClient
+
+<PageTitle>Movimentazione Magazzino</PageTitle>
+
+<h3>Nuova Movimentazione</h3>
+
+@if (_items == null)
+{
+    <p><em>Caricamento prodotti...</em></p>
+}
+else if (!_items.Any())
+{
+    <p>_Nessun prodotto disponibile.</p>
+}
+else
+{
+    <EditForm Model="_movement" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="mb-3">
+            <label for="itemId" class="form-label">Prodotto</label>
+            <InputSelect 
+                    id="itemId" 
+                    class="form-select" 
+                    @bind-Value="_movement.ItemId">
+                <option value="">-- seleziona --</option>
+                @foreach (var item in _items)
+                {
+                    <option value="@item.Id">@item.ProductName (@item.QuantityInStock disponibili)</option>
+                }
+            </InputSelect>
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantità (+/-)</label>
+            <InputNumber id="quantity" class="form-control" @bind-Value="_movement.Quantity" />
+        </div>
+        <button type="submit" class="btn btn-primary">Esegui Movimentazione</button>
+    </EditForm>
+    @if (!string.IsNullOrEmpty(_message))
+    {
+        <div class="alert @_alertClass mt-3">@_message</div>
+    }
+}
+
